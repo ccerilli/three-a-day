@@ -2,14 +2,16 @@ package com.example.threeaday;
 
 public class Task {
 
+    private int id;
     private String description;
     private String type;
-    private int id;
 
-    public Task(String description, String type, int id) {
+
+    public Task(int id, String description, String type) {
+        this.id = id;
         this.description = description;
         this.type = type;
-        this.id = id;
+
     }
 
     public String getDescription() {

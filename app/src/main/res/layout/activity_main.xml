@@ -7,12 +7,139 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/txtDate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="60dp"
+        android:text="Wed, Dec 16"
+        android:textSize="36sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/chkTask1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTask1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/edtTask1"
+        app:layout_constraintTop_toTopOf="@+id/edtTask1" />
+
+    <CheckBox
+        android:id="@+id/chkTask2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTask2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/edtTask2"
+        app:layout_constraintStart_toEndOf="@id/edtTask2"/>
+
+    <CheckBox
+        android:id="@+id/chkTask3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/edtTask3"
+        app:layout_constraintTop_toTopOf="@+id/edtTask3"
+        app:layout_constraintStart_toEndOf="@id/edtTask3"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/btnSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="Save Changes"
+        app:backgroundTint="@android:color/darker_gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/txtDate"
+        app:layout_constraintStart_toStartOf="@+id/txtDate" />
+
+
+    <EditText
+        android:id="@+id/edtTask2"
+        android:layout_width="@dimen/TextSizeForTasks"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:text="Call Garage"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkTask2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTask1" />
+
+    <EditText
+        android:id="@+id/edtTask3"
+        android:layout_width="@dimen/TextSizeForTasks"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="@android:color/transparent"
+        android:text="Work On This App"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@+id/chkTask3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edtTask2" />
+
+    <EditText
+        android:id="@+id/edtTask1"
+        android:layout_width="@dimen/TextSizeForTasks"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:background="@android:color/transparent"
+        android:text="Run 3 Miles"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toStartOf="@id/chkTask1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtDate" />
+
+    <TextView
+        android:id="@+id/txtBonus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Bonus"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/edtTask3"
+        app:layout_constraintTop_toBottomOf="@+id/edtTask3" />
+
+    <EditText
+        android:id="@+id/edtBonus1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Secret Santa"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/txtBonus"
+        app:layout_constraintTop_toBottomOf="@+id/txtBonus" />
+
+    <EditText
+        android:id="@+id/edtBonus2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Clean Bathroom"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/edtBonus1"
+        app:layout_constraintTop_toBottomOf="@+id/edtBonus1" />
+
+    <EditText
+        android:id="@+id/edtBonus3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/transparent"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Do Budget"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/edtBonus2"
+        app:layout_constraintTop_toBottomOf="@+id/edtBonus2" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

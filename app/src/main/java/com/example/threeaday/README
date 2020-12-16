@@ -1,0 +1,10 @@
+Three A Day
+
+This is a simple phone application for setting 3 major goals to focus on for each day.
+
+[Version 1]
+The first iteration will setup a simple GUI, a database, and the functionality to add three goals for the current day.
+
+[Future Versions]
+-Add a calendar for supporting goal setting/history over multiple days
+-Rework Bonus Tasks as listview to support unlimited
